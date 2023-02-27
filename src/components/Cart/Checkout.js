@@ -61,12 +61,12 @@ const Checkout = (props) => {
                 <input type='text' id='street' ref={streetInputRef} />
                 {!formInputValidity.street && <p>Please enter a valid street!</p>}
             </div>
-            <div className={cityControlClasses}>
+            <div className={postalCodeControlClasses}>
                 <label htmlFor='postal'>Postal Code</label>
                 <input type='text' id='postal' ref={postalCodeInputRef} />
                 {!formInputValidity.postalCode && <p>Please enter a valid postal code!</p>}
             </div>
-            <div className={postalCodeControlClasses}>
+            <div className={cityControlClasses}>
                 <label htmlFor='city'>City</label>
                 <input type='text' id='city' ref={cityInputRef} />
                 {!formInputValidity.city && <p>Please enter a valid city!</p>}

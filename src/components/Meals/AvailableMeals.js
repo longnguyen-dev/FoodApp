@@ -33,7 +33,6 @@ const AvailableMeals = () => {
     }
 
     fetchMeals().catch((error) => {
-      console.log(error.message);
       setIsLoading(false)
       setHttpError(error.message)
     });
